@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=35.5811
+sta_lon=-97.337898
+sta_dist_deg=99.76125611468105
+sta_dist_km=11092.945555640996
+sta_azim=47.20434549698657
+sta_name=GS.OK025
+movie_date=2025-11-04 20:28:07 UTC
+movie_start=2016-07-29T21:18:04
+movie_end=2016-07-29T21:58:04.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20160729_M7_7_NorthernMarianaIslands_2016_07_29T211804

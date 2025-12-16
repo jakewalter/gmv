@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=72.98536988106788
+sta_dist_km=8115.60285005133
+sta_azim=55.797214242627064
+sta_name=AG.CCAR
+movie_date=2025-11-05 04:21:01 UTC
+movie_start=2025-09-18T18:57:55
+movie_end=2025-09-18T19:37:55.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20250918_M7_8_Russia_2025_09_18T185755

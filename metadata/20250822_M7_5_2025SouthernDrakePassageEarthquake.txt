@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=97.08623159897286
+sta_dist_km=10795.496400844428
+sta_azim=335.3144062439852
+sta_name=AG.CCAR
+movie_date=2025-11-05 04:06:43 UTC
+movie_start=2025-08-22T02:15:58
+movie_end=2025-08-22T02:55:58.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20250822_M7_5_2025SouthernDrakePassageEarthquake_2025_08_22T021558

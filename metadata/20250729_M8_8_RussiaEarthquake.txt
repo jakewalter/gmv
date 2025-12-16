@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=73.51961378384496
+sta_dist_km=8175.008061630929
+sta_azim=55.41993680618115
+sta_name=AG.CCAR
+movie_date=2025-11-05 03:53:12 UTC
+movie_start=2025-07-29T23:24:32
+movie_end=2025-07-30T00:04:32.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20250729_M8_8_RussiaEarthquake_2025_07_29T232432

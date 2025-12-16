@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=36.8515
+sta_lon=-97.85959
+sta_dist_deg=146.24734984721294
+sta_dist_km=16261.96333822196
+sta_azim=17.540554160231473
+sta_name=OK.GC02
+movie_date=2025-11-04 20:21:44 UTC
+movie_start=2016-03-02T12:49:28
+movie_end=2016-03-02T13:29:28.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20160302_M7_8_Indonesia_2016_03_02T124928

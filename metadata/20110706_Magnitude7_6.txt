@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=32.608299
+sta_lon=-98.916199
+sta_dist_deg=95.98362164275865
+sta_dist_km=10672.891767645628
+sta_azim=55.9446076190543
+sta_name=TA.133A
+movie_date=2025-11-03 22:54:43 UTC
+movie_start=2011-07-06T19:02:58
+movie_end=2011-07-06T19:42:58.000000Z
+movie_channel=HHZ,BHZ,SHZ
+movie_label=20110706_Magnitude7_6_2011_07_06T190258

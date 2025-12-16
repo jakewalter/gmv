@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=112.63381833164458
+sta_dist_km=12524.309167083773
+sta_azim=55.82881585037933
+sta_name=AG.CCAR
+movie_date=2025-11-04 20:52:40 UTC
+movie_start=2017-01-22T04:30:02
+movie_end=2017-01-22T05:10:02.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20170122_M7_9_PapuaNewGuinea_2017_01_22T043002

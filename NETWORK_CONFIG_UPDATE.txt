@@ -1,0 +1,88 @@
+================================================================================
+                    NETWORK CONFIGURATION UPDATE
+================================================================================
+
+Date: November 3, 2025
+
+SUMMARY OF CHANGES
+==================
+
+Both batch processing scripts have been updated to include comprehensive network
+and channel coverage for maximum data availability:
+
+NETWORKS ADDED
+==============
+
+Global M7.5+ Script (gmv_batch_m8_catalog.py):
+  - All global networks including:
+    * OK: Oklahoma USGS network
+    * US: United States Geological Survey
+    * Y7, Y9: USArray Transportable Array stations
+    * ZP: PBO Seismic Network
+    * O2: Ocean Bottom seismic network
+    * TA, IU: Temporary and Global networks
+    * And all other available networks
+
+Local Oklahoma M4.5+ Script (gmv_batch_ok_local.py):
+  - OK: Oklahoma USGS network
+  - US: United States Geological Survey
+  - N4: Network for Earthquake Engineering
+  - XO: Other experimental networks
+  - O2: Ocean Bottom seismic network
+  - Y7: USArray Transportable Array
+  - Y9: USArray Transportable Array
+  - ZP: PBO Seismic Network
+  - TA: Temporary Arrays
+  - IU: Global Seismic Network
+
+CHANNELS EXPANDED
+=================
+
+Both scripts now include BOTH broadband AND non-broadband stations:
+
+Broadband Channels:
+  - LH*: Long-period high gain seismometers (0.1-1 Hz)
+  - BH*: Broad-band high gain seismometers (0.1-10 Hz)
+  - HH*: High-frequency seismometers (0.1-100 Hz)
+
+Non-Broadband Channels:
+  - EH*: Extremely short-period high gain seismometers
+  - SH*: Short-period high gain seismometers
+
+COMMAND-LINE PARAMETERS
+=======================
+
+Global M7.5+ Earthquakes:
+  -n all              Use all networks globally
+  -b LH,BH,HH,EH,SH   Include all channel bands
+
+Local Oklahoma M4.5+ Earthquakes:
+  -n OK,US,N4,XO,O2,Y7,Y9,ZP,TA,IU   Use expanded Oklahoma networks
+  -b LH,BH,HH,EH,SH                   Include all channel bands
+
+IMPACT
+======
+
+These changes will:
+1. Increase the number of available seismic stations per event
+2. Include shorter-period (higher frequency) data (EH*, SH* channels)
+3. Provide more complete spatial coverage
+4. Enable better phase picking with diverse station types
+5. Enhance ground motion visualization quality
+
+REFERENCE STATION
+=================
+
+Both scripts maintain SMO (Oklahoma City seismic station) as the reference
+station for consistent phase picking and visualization.
+
+BACKWARD COMPATIBILITY
+=======================
+
+These are non-breaking changes:
+- Existing scripts continue to work unchanged
+- Output filenames remain the same
+- Processing parameters are compatible with gmv_generalized.py
+- Enhanced data selection improves visualization quality
+
+================================================================================

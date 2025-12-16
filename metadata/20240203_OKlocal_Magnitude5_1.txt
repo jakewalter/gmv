@@ -1,0 +1,17 @@
+movie_lat_min=33.6
+movie_lat_max=37.0
+movie_lon_min=-103.0
+movie_lon_max=-94.4
+movie_filter_tlo=2.0
+movie_filter_thi=0.05
+sta_lat=36.59611
+sta_lon=-98.665
+sta_dist_deg=1.8694722940899353
+sta_dist_km=207.8758346053653
+sta_azim=305.07977078840844
+sta_name=O2.FW04
+movie_date=2025-11-04 17:01:12 UTC
+movie_start=2024-02-03T05:24:18
+movie_end=2024-02-03T05:34:18.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20240203_OKlocal_Magnitude5_1_2024_02_03T052418

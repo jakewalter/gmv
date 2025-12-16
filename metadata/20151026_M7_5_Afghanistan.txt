@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=36.8515
+sta_lon=-97.85959
+sta_dist_deg=106.03348753703239
+sta_dist_km=11790.38586854705
+sta_azim=350.2491383469719
+sta_name=OK.GC02
+movie_date=2025-11-04 20:09:08 UTC
+movie_start=2015-10-26T09:09:22
+movie_end=2015-10-26T09:49:22.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20151026_M7_5_Afghanistan_2015_10_26T090922

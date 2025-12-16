@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=99.25534175405245
+sta_dist_km=11036.69044542247
+sta_azim=57.35567868822922
+sta_name=AG.CCAR
+movie_date=2025-11-04 21:39:48 UTC
+movie_start=2018-09-06T15:48:58
+movie_end=2018-09-06T16:28:58.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20180906_M7_9_Fiji_2018_09_06T154858

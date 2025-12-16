@@ -1,0 +1,17 @@
+movie_lat_min=33.6
+movie_lat_max=37.0
+movie_lon_min=-103.0
+movie_lon_max=-94.4
+movie_filter_tlo=2.0
+movie_filter_thi=0.05
+sta_lat=36.8515
+sta_lon=-97.85959
+sta_dist_deg=0.6250464392814085
+sta_dist_km=69.50199296533884
+sta_azim=333.88792150689426
+sta_name=OK.GC02
+movie_date=2025-11-04 16:55:07 UTC
+movie_start=2018-04-07T12:15:53
+movie_end=2018-04-07T12:25:53.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20180407_OKlocal_Magnitude4_6_2018_04_07T121553

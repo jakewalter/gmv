@@ -1,0 +1,17 @@
+movie_lat_min=33.6
+movie_lat_max=37.0
+movie_lon_min=-103.0
+movie_lon_max=-94.4
+movie_filter_tlo=20.0
+movie_filter_thi=0.5
+sta_lat=35.25738
+sta_lon=-97.40115
+sta_dist_deg=0.5902470583239883
+sta_dist_km=65.63247835250246
+sta_azim=242.74420504999767
+sta_name=OK.FNO
+movie_date=2025-11-04 17:07:57 UTC
+movie_start=2011-11-05T07:12:35
+movie_end=2011-11-05T07:22:35.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=test_OKlocal_fix2_2011_11_05T071235

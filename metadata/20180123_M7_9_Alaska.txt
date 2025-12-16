@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=44.635398451746056
+sta_dist_km=4963.229856592553
+sta_azim=94.72552381151722
+sta_name=AG.CCAR
+movie_date=2025-11-04 21:19:41 UTC
+movie_start=2018-01-23T09:31:20
+movie_end=2018-01-23T10:11:20.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20180123_M7_9_Alaska_2018_01_23T093120

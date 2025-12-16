@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=35.5811
+sta_lon=-97.337898
+sta_dist_deg=81.50640990407449
+sta_dist_km=9063.099270344897
+sta_azim=340.8741004130652
+sta_name=GS.OK025
+movie_date=2025-11-04 20:47:59 UTC
+movie_start=2016-12-25T14:22:07
+movie_end=2016-12-25T15:02:07.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20161225_M7_6_Chile_2016_12_25T142207

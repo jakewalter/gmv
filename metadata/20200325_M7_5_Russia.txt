@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=76.89690775790497
+sta_dist_km=8550.546017333643
+sta_azim=52.937560340397944
+sta_name=AG.CCAR
+movie_date=2025-11-04 22:58:24 UTC
+movie_start=2020-03-25T02:49:01
+movie_end=2020-03-25T03:29:01.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20200325_M7_5_Russia_2020_03_25T024901

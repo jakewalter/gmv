@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=32.6213
+sta_lon=-102.485001
+sta_dist_deg=140.5045150367134
+sta_dist_km=15623.389242736646
+sta_azim=26.06931697792586
+sta_name=TA.128A
+movie_date=2025-11-03 22:04:45 UTC
+movie_start=2010-04-06T22:14:41
+movie_end=2010-04-06T22:54:41.000000Z
+movie_channel=HHZ,BHZ,SHZ
+movie_label=20100406_Magnitude7_8_2010_04_06T221441

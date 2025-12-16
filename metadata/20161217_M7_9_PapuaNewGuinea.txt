@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=35.5811
+sta_lon=-97.337898
+sta_dist_deg=108.21503225285139
+sta_dist_km=12032.962573194367
+sta_azim=54.013982022043066
+sta_name=GS.OK025
+movie_date=2025-11-04 20:43:04 UTC
+movie_start=2016-12-17T10:50:50
+movie_end=2016-12-17T11:30:50.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20161217_M7_9_PapuaNewGuinea_2016_12_17T105050

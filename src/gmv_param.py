@@ -117,8 +117,7 @@ scale_plot = True
 gain = 3.0
 
 # The default network to request data from.
-request_net = '_US-ALL'
-
+request_net = '*'
 
 # Reference station location plot parameters.
 ref_sta_marker_color = 'green'
@@ -127,7 +126,7 @@ ref_sta_marker_edge_color = 'yellow'
 ref_sta_marker_edge_width = 1
 
 # Default region for GMV.
-region = 'na'
+region = 'ok'
 
 # Individual frame sizes.
 
@@ -155,7 +154,7 @@ output_type = 'VEL'
 output_factor_symbol = {1000: 'm', 1000000: u'\u03bc', 1000000000: u'\u03BC'}
 output_units = {'VEL': 'cm/s', 'DISP': 'm', 'ACC': 'm/s^2', 'PA': 'Pascal', 'C': 'Degrees Celsius'}
 channel_comp_index = {'Z': 0, '1': 1, 'N': 1, '2': 2, 'E': 2}
-channel_band = 'LH,BH'
+channel_band = 'HH,BH,SH'
 channel_band_list = channel_band.split(',')
 channel_comp_list = {'1': ['Z'], '3': ['1', '2', 'Z', 'N', 'E']}
 
@@ -439,3 +438,31 @@ proj_regions['us']['quiver_scale_units'] = 'inches'
 proj_regions['us']['quiver_scale'] = 2.0
 proj_regions['us']['quiver_width'] = 0.001
 proj_regions['us']['marker_size'] = 6.0
+
+# Oklahoma region definition
+proj_regions['ok'] = dict()
+proj_regions['ok']['name'] = 'Oklahoma & Adjoining States'
+proj_regions['ok']['corners'] = ((32.0, -106.7), (39.5, -91.5))  # Expanded: covers OK, TX, KS, AR, MO, CO, NM
+proj_regions['ok']['limits'] = ((32.0, 39.5), (-106.7, -91.5))
+proj_regions['ok']['center'] = (35.75, -99.1)
+proj_regions['ok']['ref_sta'] = ('*', 'OKC')  # All networks, example reference station OKC
+proj_regions['ok']['projection'] = 'lcc'
+proj_regions['ok']['size'] = (6.0, 4.5)
+proj_regions['ok']['quiver_scale_units'] = 'inches'
+proj_regions['ok']['quiver_scale'] = 2.0
+proj_regions['ok']['quiver_width'] = 0.003
+proj_regions['ok']['marker_size'] = 6.0
+
+# Oklahoma zoomed region definition - tight zoom on Oklahoma only for local events
+proj_regions['ok_local'] = dict()
+proj_regions['ok_local']['name'] = 'Oklahoma (Local Zoom)'
+proj_regions['ok_local']['corners'] = ((33.6, -103.0), (37.0, -94.4))  # Oklahoma state boundaries
+proj_regions['ok_local']['limits'] = ((33.6, 37.0), (-103.0, -94.4))
+proj_regions['ok_local']['center'] = (35.3, -98.7)
+proj_regions['ok_local']['ref_sta'] = ('OK', 'SMO')  # SMO in Oklahoma City
+proj_regions['ok_local']['projection'] = 'lcc'
+proj_regions['ok_local']['size'] = (6.5, 5.5)  # Slightly taller for better aspect ratio
+proj_regions['ok_local']['quiver_scale_units'] = 'inches'
+proj_regions['ok_local']['quiver_scale'] = 2.0
+proj_regions['ok_local']['quiver_width'] = 0.003
+proj_regions['ok_local']['marker_size'] = 8.0  # Larger markers for zoomed view

@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=97.00002671601305
+sta_dist_km=10785.910855207308
+sta_azim=335.22076305011143
+sta_name=AG.CCAR
+movie_date=2025-11-05 04:35:36 UTC
+movie_start=2025-10-10T20:29:00
+movie_end=2025-10-10T21:09:00.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20251010_M7_6_DrakePassage_2025_10_10T202900

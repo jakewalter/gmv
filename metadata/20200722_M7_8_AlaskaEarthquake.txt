@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=49.97959047643751
+sta_dist_km=5557.476896752555
+sta_azim=86.05055436585732
+sta_name=AG.CCAR
+movie_date=2025-11-04 23:12:11 UTC
+movie_start=2020-07-22T06:12:24
+movie_end=2020-07-22T06:52:24.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20200722_M7_8_AlaskaEarthquake_2020_07_22T061224

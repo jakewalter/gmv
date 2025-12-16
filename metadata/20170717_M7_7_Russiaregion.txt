@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=33.917
+sta_lon=-91.772
+sta_dist_deg=68.11359153791895
+sta_dist_km=7573.8858145563345
+sta_azim=61.99613913114825
+sta_name=AG.CCAR
+movie_date=2025-11-04 20:59:17 UTC
+movie_start=2017-07-17T23:33:53
+movie_end=2017-07-18T00:13:53.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20170717_M7_7_Russiaregion_2017_07_17T233353

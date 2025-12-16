@@ -37,6 +37,7 @@ import gmv_param as param
 """
     Name:
     gmv_generalized.py
+    python gmv_generalized.py -e 52.530,160.165 -z 20.7 -m 8.8 -t 2025-07-29T23:24:50 -o OK_Event_kamchatka
     
     Description:
     
@@ -168,6 +169,9 @@ def usage():
           '-d 4129.103856185302 -s 6.0 -p 466.17595138658135 -q 2.5 -g 5 -D 0.05 -G -o GMV_Example_3C'
           )
     print('\n\n\n')
+    # Additional optional filter override flags
+    print(f"-f, --fmin\t\t[default: per-size defaults in gmv_param.filter_freqmin] Override bandpass low frequency (Hz) for this run.{new_line}")
+    print(f"-F, --fmax\t\t[default: per-size defaults in gmv_param.filter_freqmax] Override bandpass high frequency (Hz) for this run.{new_line}")
 
 
 def get_map_params(llc_point, urc_point):
@@ -917,17 +921,20 @@ def get_fedcatalog_stations(req_url, req_start, req_end, req_band, req_comp,
 
 # ----- MAIN -----
 q_set = False
+# Optional filter override (can be set via command-line -f/--fmin and -F/--fmax)
+filter_override_min = None
+filter_override_max = None
 
 if len(sys.argv) <= 1:
     usage()
     sys.exit(3)
 
 try:
-    options, remainder = getopt.getopt(sys.argv[1:], 'hHvb:c:d:D:e:g:Gi:l:m:n:N:o:p:P:q:r:s:S:t:T:z:',
+    options, remainder = getopt.getopt(sys.argv[1:], 'hHvb:c:d:D:e:g:Gi:l:m:n:N:o:p:P:q:r:s:S:t:T:z:f:F:',
                                        ['help', 'header', 'verbose', 'band=', 'comp=', 'dur=', 'std=', 'eloc=', 'gain=',
                                         'gc', 'eid=', 'emag=', 'output=', 'phase=', 'qscale=', 'tstep=',
                                         'net=', 'rnet=', 'delay=', 'region=', 'sizem=', 'rsta=', 'etime=', 'title=',
-                                        'depth='])
+                                        'depth=', 'fmin=', 'fmax='])
     for opt, arg in options:
         if opt in('-h', '--help'):
             usage()
@@ -1009,6 +1016,12 @@ try:
             draw_great_circle = True
         elif opt in ('-S', '--rsta'):
             reference_sta = arg
+        elif opt in ('-f', '--fmin'):
+            # override bandpass low frequency (Hz)
+            filter_override_min = float(arg)
+        elif opt in ('-F', '--fmax'):
+            # override bandpass high frequency (Hz)
+            filter_override_max = float(arg)
         elif opt in ('-t', '--etime'):
             event_time = arg.replace('[', '').replace(']', '').replace(', ', ',').split()
         elif opt in ('-T', '--title'):
@@ -1034,6 +1047,23 @@ if not log_to_screen:
         sys.stdout = log_file
 print(f"\n\n............{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} START............", file=log_file,
       flush=True)
+
+# Apply filter overrides (if set via command-line) after log_file is available for logging.
+try:
+    if filter_override_min is not None:
+        for _k in list(filter_freqmin.keys()):
+            filter_freqmin[_k] = float(filter_override_min)
+        utils.print_message('INFO', f'Applying filter fmin override = {filter_override_min} Hz to all size bands', log_file)
+except Exception as _er:
+    utils.print_message('ERR', f'Could not apply filter fmin override: {_er}', log_file)
+
+try:
+    if filter_override_max is not None:
+        for _k in list(filter_freqmax.keys()):
+            filter_freqmax[_k] = float(filter_override_max)
+        utils.print_message('INFO', f'Applying filter fmax override = {filter_override_max} Hz to all size bands', log_file)
+except Exception as _er:
+    utils.print_message('ERR', f'Could not apply filter fmax override: {_er}', log_file)
 
 if event_lat_lon[0] is None:
     usage()
@@ -1247,7 +1277,9 @@ else:
 if len(event_time) != 1:
     plt.title(title_string)
 else:
-    plt.title(f'{title_string}\nOrigin Time (OT) = {event_time[0].replace(" ", "T").split("T")[1]} UTC')
+    # Include full date and time in the origin time display
+    ot_display = event_time[0].replace(" ", "T").replace("T", " ")
+    plt.title(f'{title_string}\nOrigin Time (OT) = {ot_display} UTC')
 
 # Place the tight_layout after most of the elements are in, so the layout can be configured properly.
 # Info - pad: Padding between the figure edge and the edges of subplots, as a fraction of the font size.

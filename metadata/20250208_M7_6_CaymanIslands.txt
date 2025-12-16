@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=35.445721
+sta_lon=-91.692437
+sta_dist_deg=19.566376599939463
+sta_dist_km=2175.681810730079
+sta_azim=336.8028769806199
+sta_name=AG.X703
+movie_date=2025-11-05 03:24:17 UTC
+movie_start=2025-02-08T23:22:54
+movie_end=2025-02-09T00:02:54.000000Z
+movie_channel=LHZ,BHZ,HHZ,EHZ,SHZ
+movie_label=20250208_M7_6_CaymanIslands_2025_02_08T232254

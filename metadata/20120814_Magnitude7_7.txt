@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=34.5892
+sta_lon=-95.3713
+sta_dist_deg=80.32312954826168
+sta_dist_km=8931.524497980345
+sta_azim=46.57330293549762
+sta_name=OK.X37A
+movie_date=2025-11-03 23:02:30 UTC
+movie_start=2012-08-14T02:59:18
+movie_end=2012-08-14T03:39:18.000000Z
+movie_channel=HHZ,BHZ,SHZ
+movie_label=20120814_Magnitude7_7_2012_08_14T025918

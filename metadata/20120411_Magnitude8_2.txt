@@ -1,0 +1,17 @@
+movie_lat_min=32.0
+movie_lat_max=39.5
+movie_lon_min=-106.7
+movie_lon_max=-91.5
+movie_filter_tlo=500.0
+movie_filter_thi=100.0
+sta_lat=36.3795
+sta_lon=-99.0014
+sta_dist_deg=141.3924889101954
+sta_dist_km=15722.127432460762
+sta_azim=14.736067503759982
+sta_name=OK.U32A
+movie_date=2025-11-03 22:59:47 UTC
+movie_start=2012-04-11T10:42:50
+movie_end=2012-04-11T11:22:50.000000Z
+movie_channel=HHZ,BHZ,SHZ
+movie_label=20120411_Magnitude8_2_2012_04_11T104250

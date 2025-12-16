@@ -1,0 +1,8 @@
+# Ignore generated video files and metadata
+video/
+metadata/
+
+# Keep common artifacts ignored
+*.pyc
+__pycache__/
+.DS_Store

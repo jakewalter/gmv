@@ -131,7 +131,23 @@ EXAMPLES:\
 		gmv_generalized.py --band=LH,BH --comp=3 -n all -t 2020-06-18T12:49:53 
 		-T "June 18, 2020, South Of Kermadec Islands, M 7.4" -m 7.4 -z 10.0 -e -33.29,-177.84 -r ak 
 		-d 4129.0 -s 6.0 -p 466.0 -q 2.5 -g 5 -D 0.05 -G -o GMV_Example_3C
-		
+
+LOCAL DATA ANIMATION (scripts/local_gmv.py) 🔧
+
+A helper script is provided to create GMV-style animations from local waveform collections. It supports
+MiniSEED, SAC and SEG-Y files and accepts station metadata via StationXML or a simple CSV mapping.
+
+Example:
+
+  python scripts/local_gmv.py --data-dir /media/jwalter/Tryon_3D_Earthquake \
+      --station-csv /path/to/stations.csv \
+      --start 2000-01-01T00:00:00 --end 2000-01-01T00:10:00 \
+      --time-step 1 --out /tmp/local_gmv.mp4
+
+Notes:
+  - Provide station latitude/longitude via --station-xml or --station-csv if the waveform files do not contain
+    station location headers (SAC with stla/stlo often do).
+    - If SEG-Y files are present, the script will attempt to extract geometry from SEG-Y trace headers (e.g., `GroupX`/`GroupY`) by testing common scalings. This requires `segyio` to be installed in the environment.
 SELECTING PARAMETERS:
 
  GMVs are event-based animation and therefore you need to start with the event parameter. As a minimum, you need to 
